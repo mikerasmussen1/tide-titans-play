@@ -1,0 +1,83 @@
+{
+ "frames": {
+  "lightning_00.png": {
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 512,
+    "h": 512
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 512,
+    "h": 512
+   },
+   "sourceSize": {
+    "w": 512,
+    "h": 512
+   }
+  },
+  "lightning_01.png": {
+   "frame": {
+    "x": 512,
+    "y": 0,
+    "w": 512,
+    "h": 512
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 512,
+    "h": 512
+   },
+   "sourceSize": {
+    "w": 512,
+    "h": 512
+   }
+  },
+  "lightning_02.png": {
+   "frame": {
+    "x": 1024,
+    "y": 0,
+    "w": 512,
+    "h": 512
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 512,
+    "h": 512
+   },
+   "sourceSize": {
+    "w": 512,
+    "h": 512
+   }
+  }
+ },
+ "animations": {
+  "lightning": [
+   "lightning_00.png",
+   "lightning_01.png",
+   "lightning_02.png"
+  ]
+ },
+ "meta": {
+  "app": "mf build.py",
+  "version": "1.0",
+  "image": "vfx_lightning_sheet.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 1536,
+   "h": 512
+  },
+  "scale": "1",
+  "fps": 24
+ }
+}

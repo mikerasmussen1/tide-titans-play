@@ -1,0 +1,733 @@
+{
+ "version": "1.0.0",
+ "title": "Tide Titans: Reef Blast",
+ "rtp": {
+  "target": 0.965,
+  "fish": 0.945,
+  "energy": 0.02,
+  "refundExpiredBullets": false
+ },
+ "maxWinMultiplier": 950,
+ "currency": {
+  "label": "SC",
+  "decimals": 2,
+  "demoStartBalance": 2000.0
+ },
+ "bet": {
+  "ladder": [
+   0.05,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.7,
+   1,
+   1.5,
+   2,
+   2.5,
+   3,
+   4
+  ],
+  "defaultIndex": 0,
+  "ladderLive": [
+   0.05,
+   0.1,
+   0.2,
+   0.3,
+   0.4,
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   1,
+   1.5,
+   2,
+   2.5,
+   3,
+   3.5,
+   4,
+   4.5,
+   5,
+   10
+  ],
+  "useLiveLadder": true
+ },
+ "cannonTiers": [
+  {
+   "tier": 1,
+   "minBet": 0.05,
+   "maxBet": 0.1,
+   "skin": "cannon_t1"
+  },
+  {
+   "tier": 2,
+   "minBet": 0.2,
+   "maxBet": 0.4,
+   "skin": "cannon_t2"
+  },
+  {
+   "tier": 3,
+   "minBet": 0.5,
+   "maxBet": 1,
+   "skin": "cannon_t3"
+  },
+  {
+   "tier": 4,
+   "minBet": 1.5,
+   "maxBet": 2.5,
+   "skin": "cannon_t4"
+  },
+  {
+   "tier": 5,
+   "minBet": 3,
+   "maxBet": 4,
+   "skin": "cannon_t5"
+  }
+ ],
+ "fire": {
+  "fireIntervalMs": 220,
+  "bulletSpeedPxPerS": 1500,
+  "bulletRadiusPx": 14,
+  "maxBulletsPerSeat": 30,
+  "bulletLifetimeMs": 8000,
+  "maxBounces": 8,
+  "netRadiusPx": 70,
+  "hitTolerancePx": 64,
+  "fireIntervalDocMs": 180
+ },
+ "weapons": {
+  "torpedo": {
+   "costFactor": 6,
+   "speedPxPerS": 1100,
+   "blastRadiusPx": 0,
+   "chanceFactor": 6
+  },
+  "railgun": {
+   "costFactor": 15,
+   "speedPxPerS": 2600,
+   "aoeChance": 0.35,
+   "aoeRadiusPx": 260,
+   "chanceFactor": 15
+  },
+  "frost": {
+   "flatCost": 3,
+   "freezeMs": 8000,
+   "cooldownMs": 12000,
+   "confirmDialog": true,
+   "feeToEnergyRate": 0.965
+  },
+  "storm": {
+   "unitsToFull": 100,
+   "valueShare": 0.02,
+   "radiusPx": 420,
+   "autoUseAfterMs": 180000,
+   "clearOnLeave": true,
+   "clearAfterDisconnectMs": 86400000
+  }
+ },
+ "auto": {
+  "defaultShots": 3000,
+  "shotStep": 100,
+  "minShots": 100,
+  "maxShots": 9900,
+  "includeBelow25xDefault": false
+ },
+ "aim": {
+  "retargetOnCaptureMs": 300,
+  "reticleSizePx": 150
+ },
+ "spawn": {
+  "directorTickMs": 250,
+  "minFish": 25,
+  "maxFish": 60,
+  "bossSlotCooldownMs": [
+   45000,
+   90000
+  ],
+  "formationChance": 0.25,
+  "tideIntervalMs": [
+   150000,
+   210000
+  ],
+  "tideSweepMs": 4000,
+  "schoolBannerMs": 2000
+ },
+ "arenas": [
+  "reef",
+  "temple"
+ ],
+ "idle": {
+  "warnAfterMs": 120000,
+  "countdownS": 60
+ },
+ "seats": {
+  "count": 4,
+  "botSeats": 0,
+  "botBetRange": [
+   0.05,
+   1
+  ],
+  "botShotsPerS": [
+   2,
+   4
+  ]
+ },
+ "species": [
+  {
+   "id": "N01",
+   "name": "Glowfin Minnow",
+   "cls": "normal",
+   "behaviour": "Tight school of 5 to 9, darts and regroups",
+   "path": "school_bezier",
+   "size": "XS",
+   "spawnWeight": 140,
+   "spriteWidthPx": 82,
+   "asset": "fish_n01_minnow",
+   "expectedMultiplier": 2.0,
+   "pHitBase": 0.4725,
+   "maxMultiplier": 2,
+   "multiplier": 2
+  },
+  {
+   "id": "N02",
+   "name": "Clownfish",
+   "cls": "normal",
+   "behaviour": "School of 3 to 7, playful wiggle",
+   "path": "school_bezier",
+   "size": "S",
+   "spawnWeight": 120,
+   "spriteWidthPx": 108,
+   "asset": "fish_n02_clownfish",
+   "expectedMultiplier": 2.0,
+   "pHitBase": 0.4725,
+   "maxMultiplier": 2,
+   "multiplier": 2
+  },
+  {
+   "id": "N03",
+   "name": "Bannerfin Angelfish",
+   "cls": "normal",
+   "behaviour": "Pairs or school of 3 to 5, slow tail sweep",
+   "path": "school_bezier",
+   "size": "S",
+   "spawnWeight": 100,
+   "spriteWidthPx": 136,
+   "asset": "fish_n03_angelfish",
+   "expectedMultiplier": 3.0,
+   "pHitBase": 0.315,
+   "maxMultiplier": 3,
+   "multiplier": 3
+  },
+  {
+   "id": "N04",
+   "name": "Spikeball Puffer",
+   "cls": "normal",
+   "behaviour": "Lazy drift, puffs up 1.2x on hit",
+   "path": "wander_spline",
+   "size": "S",
+   "spawnWeight": 90,
+   "spriteWidthPx": 122,
+   "asset": "fish_n04_puffer",
+   "expectedMultiplier": 4.0,
+   "pHitBase": 0.23625,
+   "maxMultiplier": 4,
+   "multiplier": 4,
+   "speedPx": 40
+  },
+  {
+   "id": "N05",
+   "name": "Lantern Jelly",
+   "cls": "normal",
+   "behaviour": "Pulsing bell, rises and sinks",
+   "path": "pulse_spline",
+   "size": "S",
+   "spawnWeight": 80,
+   "spriteWidthPx": 136,
+   "asset": "fish_n05_jelly",
+   "expectedMultiplier": 5.0,
+   "pHitBase": 0.189,
+   "maxMultiplier": 5,
+   "multiplier": 5
+  },
+  {
+   "id": "N06",
+   "name": "Flame Lionfish",
+   "cls": "normal",
+   "behaviour": "Schools of 3 to 6, fans its spines",
+   "path": "school_bezier",
+   "size": "M",
+   "spawnWeight": 70,
+   "spriteWidthPx": 172,
+   "asset": "fish_n06_lionfish",
+   "expectedMultiplier": 6.0,
+   "pHitBase": 0.1575,
+   "maxMultiplier": 6,
+   "multiplier": 6
+  },
+  {
+   "id": "N07",
+   "name": "Jade Sea Turtle",
+   "cls": "normal",
+   "behaviour": "Slow flipper glide, often in a line of 3",
+   "path": "glide_bezier",
+   "size": "M",
+   "spawnWeight": 60,
+   "spriteWidthPx": 188,
+   "asset": "fish_n07_turtle",
+   "expectedMultiplier": 7.0,
+   "pHitBase": 0.135,
+   "maxMultiplier": 7,
+   "multiplier": 7,
+   "speedPx": 90
+  },
+  {
+   "id": "N08",
+   "name": "Ruby Octopus",
+   "cls": "normal",
+   "behaviour": "Jet pulses, tentacles trail",
+   "path": "pulse_spline",
+   "size": "M",
+   "spawnWeight": 55,
+   "spriteWidthPx": 188,
+   "asset": "fish_n08_octopus",
+   "expectedMultiplier": 8.0,
+   "pHitBase": 0.118125,
+   "maxMultiplier": 8,
+   "multiplier": 8
+  },
+  {
+   "id": "N09",
+   "name": "Ember Lobster",
+   "cls": "normal",
+   "behaviour": "Swims tail first in short bursts, groups of 2 to 4",
+   "path": "straight_drift",
+   "size": "M",
+   "spawnWeight": 45,
+   "spriteWidthPx": 202,
+   "asset": "fish_n09_lobster",
+   "expectedMultiplier": 10.0,
+   "pHitBase": 0.0945,
+   "maxMultiplier": 10,
+   "multiplier": 10
+  },
+  {
+   "id": "N10",
+   "name": "Glimmer Anglerfish",
+   "cls": "normal",
+   "behaviour": "Slow wander, lure bobs and glows",
+   "path": "wander_spline",
+   "size": "M",
+   "spawnWeight": 38,
+   "spriteWidthPx": 202,
+   "asset": "fish_n10_anglerfish",
+   "expectedMultiplier": 12.0,
+   "pHitBase": 0.07875,
+   "maxMultiplier": 12,
+   "multiplier": 12,
+   "speedPx": 145
+  },
+  {
+   "id": "N11",
+   "name": "Emerald Swordfish",
+   "cls": "normal",
+   "behaviour": "Fast straight dash, sometimes a pair",
+   "path": "straight_fast",
+   "size": "L",
+   "spawnWeight": 30,
+   "spriteWidthPx": 320,
+   "asset": "fish_n11_swordfish",
+   "expectedMultiplier": 15.0,
+   "pHitBase": 0.063,
+   "maxMultiplier": 15,
+   "multiplier": 15
+  },
+  {
+   "id": "N12",
+   "name": "Cobalt Manta",
+   "cls": "normal",
+   "behaviour": "Wide slow wing beats, big arcs",
+   "path": "glide_bezier",
+   "size": "L",
+   "spawnWeight": 24,
+   "spriteWidthPx": 384,
+   "asset": "fish_n12_manta",
+   "expectedMultiplier": 20.0,
+   "pHitBase": 0.04725,
+   "maxMultiplier": 20,
+   "multiplier": 20
+  },
+  {
+   "id": "N13",
+   "name": "Tiger Hammerhead",
+   "cls": "normal",
+   "behaviour": "Steady cruise with head sweeps",
+   "path": "straight_drift",
+   "size": "L",
+   "spawnWeight": 20,
+   "spriteWidthPx": 400,
+   "asset": "fish_n13_hammerhead",
+   "expectedMultiplier": 25.0,
+   "pHitBase": 0.0378,
+   "maxMultiplier": 25,
+   "multiplier": 25
+  },
+  {
+   "id": "G01",
+   "name": "Gilded Goldfish",
+   "cls": "golden",
+   "behaviour": "Solo, gold shimmer trail",
+   "path": "wander_spline",
+   "size": "M",
+   "spawnWeight": 12,
+   "spriteWidthPx": 202,
+   "asset": "fish_g01_gold_goldfish",
+   "expectedMultiplier": 40.0,
+   "pHitBase": 0.023625,
+   "maxMultiplier": 40,
+   "multiplier": 40
+  },
+  {
+   "id": "G02",
+   "name": "Gilded Clownfish",
+   "cls": "golden",
+   "behaviour": "Solo, gold shimmer trail",
+   "path": "wander_spline",
+   "size": "M",
+   "spawnWeight": 10,
+   "spriteWidthPx": 230,
+   "asset": "fish_g02_gold_clownfish",
+   "expectedMultiplier": 45.0,
+   "pHitBase": 0.021,
+   "maxMultiplier": 45,
+   "multiplier": 45
+  },
+  {
+   "id": "G03",
+   "name": "Gilded Jelly",
+   "cls": "golden",
+   "behaviour": "Pulsing, gold shimmer trail",
+   "path": "pulse_spline",
+   "size": "M",
+   "spawnWeight": 9,
+   "spriteWidthPx": 202,
+   "asset": "fish_g03_gold_jelly",
+   "expectedMultiplier": 50.0,
+   "pHitBase": 0.0189,
+   "maxMultiplier": 50,
+   "multiplier": 50
+  },
+  {
+   "id": "G04",
+   "name": "Gilded Manta",
+   "cls": "golden",
+   "behaviour": "Glide, gold shimmer trail",
+   "path": "glide_bezier",
+   "size": "L",
+   "spawnWeight": 8,
+   "spriteWidthPx": 400,
+   "asset": "fish_g04_gold_manta",
+   "expectedMultiplier": 55.0,
+   "pHitBase": 0.017182,
+   "maxMultiplier": 55,
+   "multiplier": 55
+  },
+  {
+   "id": "P01",
+   "name": "Jumbo Clownfish",
+   "cls": "giant",
+   "behaviour": "Swims inside a rainbow prize ring of 5 star coins",
+   "path": "wander_spline",
+   "size": "L",
+   "spawnWeight": 10,
+   "spriteWidthPx": 320,
+   "asset": "fish_p01_jumbo_clownfish",
+   "expectedMultiplier": 25.265,
+   "pHitBase": 0.037404,
+   "maxMultiplier": 125,
+   "baseTable": {
+    "20": 30,
+    "21": 20,
+    "22": 18,
+    "23": 14,
+    "24": 10,
+    "25": 8
+   },
+   "megaPrizeChance": 0.04,
+   "megaPrizeFactor": 5
+  },
+  {
+   "id": "P02",
+   "name": "Jumbo Angelfish",
+   "cls": "giant",
+   "behaviour": "Prize ring, slow majestic sweep",
+   "path": "wander_spline",
+   "size": "L",
+   "spawnWeight": 8,
+   "spriteWidthPx": 340,
+   "asset": "fish_p02_jumbo_angelfish",
+   "expectedMultiplier": 31.065,
+   "pHitBase": 0.03042,
+   "maxMultiplier": 150,
+   "baseTable": {
+    "25": 30,
+    "26": 20,
+    "27": 18,
+    "28": 14,
+    "29": 10,
+    "30": 8
+   },
+   "megaPrizeChance": 0.04,
+   "megaPrizeFactor": 5
+  },
+  {
+   "id": "P03",
+   "name": "Jumbo Puffer",
+   "cls": "giant",
+   "behaviour": "Prize ring, wobbles and puffs",
+   "path": "wander_spline",
+   "size": "L",
+   "spawnWeight": 7,
+   "spriteWidthPx": 320,
+   "asset": "fish_p03_jumbo_puffer",
+   "expectedMultiplier": 36.865,
+   "pHitBase": 0.025634,
+   "maxMultiplier": 175,
+   "baseTable": {
+    "30": 30,
+    "31": 20,
+    "32": 18,
+    "33": 14,
+    "34": 10,
+    "35": 8
+   },
+   "megaPrizeChance": 0.04,
+   "megaPrizeFactor": 5
+  },
+  {
+   "id": "S01",
+   "name": "Vortex Starfish",
+   "cls": "special",
+   "behaviour": "Spins slowly; on capture opens a whirlpool (radius 300 px, 2,500 ms)",
+   "path": "glide_bezier",
+   "size": "L",
+   "spawnWeight": 8,
+   "spriteWidthPx": 384,
+   "asset": "fish_s01_starfish",
+   "expectedMultiplier": 91.0,
+   "pHitBase": 0.010385,
+   "maxMultiplier": 140,
+   "selfMultiplier": 60,
+   "featureTable": {
+    "10": 30,
+    "20": 30,
+    "40": 25,
+    "80": 15
+   }
+  },
+  {
+   "id": "S02",
+   "name": "Blast Crab",
+   "cls": "special",
+   "behaviour": "Scuttles sideways; on capture throws 3 bombs (radius 220 px each)",
+   "path": "crawl_spline",
+   "size": "L",
+   "spawnWeight": 6,
+   "spriteWidthPx": 384,
+   "asset": "fish_s02_blast_crab",
+   "expectedMultiplier": 116.5,
+   "pHitBase": 0.008112,
+   "maxMultiplier": 190,
+   "selfMultiplier": 70,
+   "featureTable": {
+    "15": 30,
+    "30": 30,
+    "60": 25,
+    "120": 15
+   }
+  },
+  {
+   "id": "S03",
+   "name": "Auger Crab",
+   "cls": "special",
+   "behaviour": "On capture drops an aimable drill that bounces 6 s then explodes (radius 320 px)",
+   "path": "crawl_spline",
+   "size": "L",
+   "spawnWeight": 6,
+   "spriteWidthPx": 384,
+   "asset": "fish_s03_auger_crab",
+   "expectedMultiplier": 38.5,
+   "pHitBase": 0.024545,
+   "maxMultiplier": 80,
+   "featureTable": {
+    "20": 30,
+    "30": 25,
+    "40": 20,
+    "60": 15,
+    "80": 10
+   }
+  },
+  {
+   "id": "B01",
+   "name": "Razorfin",
+   "cls": "immortal",
+   "behaviour": "Immortal: each capture pays and it stays until its lane ends (45 s)",
+   "path": "boss_lane",
+   "size": "XL",
+   "spawnWeight": 30,
+   "spriteWidthPx": 836,
+   "asset": "boss_b01_razorfin",
+   "expectedMultiplier": 78.5,
+   "pHitBase": 0.012038,
+   "maxMultiplier": 120,
+   "table": {
+    "60": 30,
+    "70": 25,
+    "80": 20,
+    "100": 15,
+    "120": 10
+   },
+   "immortal": true,
+   "lifetimeMs": 28000
+  },
+  {
+   "id": "B02",
+   "name": "Lantern Leviathan",
+   "cls": "immortal",
+   "behaviour": "Immortal: stage goes dark, its lure is a moving spotlight (55 s)",
+   "path": "boss_stage",
+   "size": "XL",
+   "spawnWeight": 22,
+   "spriteWidthPx": 902,
+   "asset": "boss_b02_lantern_leviathan",
+   "expectedMultiplier": 144.4,
+   "pHitBase": 0.006544,
+   "maxMultiplier": 320,
+   "table": {
+    "80": 35,
+    "120": 25,
+    "160": 20,
+    "240": 12,
+    "320": 8
+   },
+   "immortal": true,
+   "lifetimeMs": 55000
+  },
+  {
+   "id": "B03",
+   "name": "Jewelback Tortoise",
+   "cls": "immortal",
+   "behaviour": "Immortal: each capture pays 50, 60 or 70x with a chance of 8x Mega Prize (50 s)",
+   "path": "boss_lane",
+   "size": "XL",
+   "spawnWeight": 26,
+   "spriteWidthPx": 792,
+   "asset": "boss_b03_jewelback",
+   "expectedMultiplier": 70.785,
+   "pHitBase": 0.01335,
+   "maxMultiplier": 560,
+   "baseTable": {
+    "50": 40,
+    "60": 35,
+    "70": 25
+   },
+   "megaPrizeChance": 0.03,
+   "megaPrizeFactor": 8,
+   "immortal": true,
+   "lifetimeMs": 50000
+  },
+  {
+   "id": "B04",
+   "name": "Riptide Crocodile",
+   "cls": "awakened",
+   "behaviour": "Captured: awakens and rampages for 8 s eating fish; total 150 to 600x",
+   "path": "boss_lane",
+   "size": "XL",
+   "spawnWeight": 14,
+   "spriteWidthPx": 1300,
+   "asset": "boss_b04_riptide_croc",
+   "expectedMultiplier": 271.0,
+   "pHitBase": 0.003487,
+   "maxMultiplier": 600,
+   "totalTable": {
+    "150": 30,
+    "200": 25,
+    "300": 20,
+    "400": 13,
+    "500": 8,
+    "600": 4
+   },
+   "baseShown": 150,
+   "rampageMs": 8000,
+   "lifetimeMs": 27000
+  },
+  {
+   "id": "B05",
+   "name": "Admiral Kraken",
+   "cls": "beast",
+   "behaviour": "Immortal beast: each capture spins the Kraken Wheel; GILDED segment spins the Gilded Wheel (60 s)",
+   "path": "boss_stage",
+   "size": "XL",
+   "spawnWeight": 8,
+   "spriteWidthPx": 946,
+   "asset": "boss_b05_admiral_kraken",
+   "expectedMultiplier": 213.2,
+   "pHitBase": 0.004432,
+   "maxMultiplier": 950,
+   "wheel": {
+    "100": 40,
+    "150": 25,
+    "200": 20,
+    "GILDED": 15
+   },
+   "gildedWheel": {
+    "500": 45,
+    "650": 28,
+    "800": 17,
+    "950": 10
+   },
+   "immortal": true,
+   "lifetimeMs": 60000
+  }
+ ],
+ "winTiers": {
+  "bigWinMult": 30,
+  "megaWinMult": 100,
+  "titanWinMult": 300,
+  "bigMs": 2500,
+  "megaMs": 4000,
+  "titanMs": 6000
+ },
+ "speeds": {
+  "XS": 100,
+  "S": 80,
+  "M": 115,
+  "L": 100,
+  "XL": 60,
+  "swordfish": 220
+ },
+ "titanEntryBannerMs": 3000,
+ "formationWaveMs": [
+  25000,
+  40000
+ ],
+ "lantern": {
+  "darknessAlpha": 0.88,
+  "lightRadiusPx": 360
+ },
+ "demo": {
+  "label": "DEMO MODE: play credits only, local demo RNG (not a certified server RNG)"
+ },
+ "ribbonAnchor": "seat",
+ "spriteScaleNote": "spriteWidthPx tuned 2026-10-30 to the apparent size in parity/demo/frames (see ASSUMPTIONS B29)",
+ "speedsDoc": {
+  "XS": 140,
+  "S": 120,
+  "M": 95,
+  "L": 80,
+  "XL": 60,
+  "swordfish": 220
+ },
+ "speedsNote": "Demo measured 2026-10-30 (tools/track_fish.py, parity/demo/track/speeds.jsonl). Doc values kept in speedsDoc."
+}

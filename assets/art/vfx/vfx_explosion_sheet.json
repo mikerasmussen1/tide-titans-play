@@ -1,0 +1,188 @@
+{
+ "frames": {
+  "explosion_00.png": {
+   "frame": {
+    "x": 0,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "sourceSize": {
+    "w": 256,
+    "h": 256
+   }
+  },
+  "explosion_01.png": {
+   "frame": {
+    "x": 256,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "sourceSize": {
+    "w": 256,
+    "h": 256
+   }
+  },
+  "explosion_02.png": {
+   "frame": {
+    "x": 512,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "sourceSize": {
+    "w": 256,
+    "h": 256
+   }
+  },
+  "explosion_03.png": {
+   "frame": {
+    "x": 768,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "sourceSize": {
+    "w": 256,
+    "h": 256
+   }
+  },
+  "explosion_04.png": {
+   "frame": {
+    "x": 1024,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "sourceSize": {
+    "w": 256,
+    "h": 256
+   }
+  },
+  "explosion_05.png": {
+   "frame": {
+    "x": 1280,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "sourceSize": {
+    "w": 256,
+    "h": 256
+   }
+  },
+  "explosion_06.png": {
+   "frame": {
+    "x": 1536,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "sourceSize": {
+    "w": 256,
+    "h": 256
+   }
+  },
+  "explosion_07.png": {
+   "frame": {
+    "x": 1792,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": {
+    "x": 0,
+    "y": 0,
+    "w": 256,
+    "h": 256
+   },
+   "sourceSize": {
+    "w": 256,
+    "h": 256
+   }
+  }
+ },
+ "animations": {
+  "explosion": [
+   "explosion_00.png",
+   "explosion_01.png",
+   "explosion_02.png",
+   "explosion_03.png",
+   "explosion_04.png",
+   "explosion_05.png",
+   "explosion_06.png",
+   "explosion_07.png"
+  ]
+ },
+ "meta": {
+  "app": "mf build.py",
+  "version": "1.0",
+  "image": "vfx_explosion_sheet.png",
+  "format": "RGBA8888",
+  "size": {
+   "w": 2048,
+   "h": 256
+  },
+  "scale": "1",
+  "fps": 20
+ }
+}

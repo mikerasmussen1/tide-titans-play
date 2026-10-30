@@ -1,0 +1,41 @@
+{
+ "wheel_kraken": {
+  "centre": [
+   512,
+   497
+  ],
+  "radius": 298,
+  "slices": [
+   "GILDED",
+   "100",
+   "200",
+   "150",
+   "100",
+   "GILDED",
+   "100",
+   "200",
+   "150",
+   "100"
+  ]
+ },
+ "wheel_gilded": {
+  "centre": [
+   512,
+   550
+  ],
+  "radius": 345,
+  "slices": [
+   "500",
+   "800",
+   "650",
+   "500",
+   "950",
+   "500",
+   "800",
+   "650",
+   "500",
+   "950"
+  ]
+ },
+ "note": "Slice index 0 is centred at 12 o clock; angle of slice i = i*36 deg clockwise."
+}
